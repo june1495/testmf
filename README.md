@@ -6,10 +6,9 @@ Este proyecto es un **Microfrontend** desarrollado en **Angular 18.2.0** e integ
 
 ## 📦 Requisitos previos
 
-- **Node.js**: `^18.13.0` o `^20.0.0` (recomendado Node 20 LTS)  
+- **Node.js**: `^18.13.0` o `^20.0.0` (recomendado Node 20 LTS)(en caso de conflictos usar versión 22.18.0) 
 - **npm**: `>=9.x` (incluido con Node) o **Yarn** `>=1.22.x`  
-- **Angular CLI** *(opcional)* para ejecutar comandos `ng` globalmente  
-
+- **Angular CLI**: `18.2.20` *( para ejecutar comandos `ng` globalmente)* 
 ---
 
 ## 🔧 Instalación
