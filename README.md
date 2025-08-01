@@ -23,7 +23,7 @@ Este proyecto es un **Microfrontend** desarrollado en **Angular 18.2.0** e integ
   npm install o yarn install
 ## 🚀 Comandos de desarrollo
 
-En este monorepo existen varios comandos para levantar el entorno de **Module Federation** con `mf-shell` como orquestador.
+3. En este monorepo existen varios comandos para levantar el entorno de **Module Federation** con `mf-shell` como orquestador.
 
 ### Para levantar el proyecto ejecutar
 ```bash
