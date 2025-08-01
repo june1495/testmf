@@ -18,7 +18,8 @@ Este proyecto es un **Microfrontend** desarrollado en **Angular 18.2.0** e integ
    ```bash
    npm install o yarn install
 2. Instalar dependencias compartidas en project/commons-lib:
-  cd project/commons-lib
+  ```bash
+  cd projects/commons-lib
   npm install o yarn install
 ## 🚀 Comandos de desarrollo
 
