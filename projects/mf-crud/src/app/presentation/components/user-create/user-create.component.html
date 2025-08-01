@@ -1,0 +1,40 @@
+<div class="container">
+  <h2 mat-dialog-title>Crear usuario</h2>
+
+<mat-dialog-content [formGroup]="form" class="space-y-4">
+  <mat-form-field appearance="fill" class="w-full">
+    <mat-label>Email</mat-label>
+    <input matInput formControlName="email" />
+    <mat-error *ngIf="form.controls.email.hasError('required')">
+      Email is required
+    </mat-error>
+    <mat-error *ngIf="form.controls.email.hasError('email')">
+      Invalid email
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="w-full">
+    <mat-label>First Name</mat-label>
+    <input matInput formControlName="first_name" />
+    <mat-error *ngIf="form.controls.first_name.hasError('required')">
+      First name is required
+    </mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="w-full">
+    <mat-label>Last Name</mat-label>
+    <input matInput formControlName="last_name" />
+    <mat-error *ngIf="form.controls.last_name.hasError('required')">
+      Last name is required
+    </mat-error>
+  </mat-form-field>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-button (click)="cancel()">Cancel</button>
+  <button mat-flat-button color="primary" [disabled]="form.invalid" (click)="save()">
+    Save
+  </button>
+</mat-dialog-actions>
+
+</div>

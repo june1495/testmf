@@ -6,7 +6,10 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "mf-shell":"ng s mf-shell",
+    "mf-crud":"ng s mf-crud",
+    "all": "node node_modules/@angular-architects/module-federation/src/server/mf-dev-server.js"
   },
   "private": true,
   "dependencies": {
@@ -15,6 +18,7 @@
     "@angular/compiler": "^18.2.0",
     "@angular/core": "^18.2.0",
     "@angular/forms": "^18.2.0",
+    "@angular/material": "^18.2.14",
     "@angular/platform-browser": "^18.2.0",
     "@angular/platform-browser-dynamic": "^18.2.0",
     "@angular/router": "^18.2.0",
@@ -23,6 +27,8 @@
     "zone.js": "~0.14.10"
   },
   "devDependencies": {
+    "@angular-architects/module-federation": "^18.0.6",
+    "@angular-devkit/build-angular": "^18.2.20",
     "@angular/cli": "^18.2.20",
     "@angular/compiler-cli": "^18.2.0",
     "@types/jasmine": "~5.1.0",
@@ -32,6 +38,9 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "ng-packagr": "^18.2.0",
+    "ngx-build-plus": "^18.0.0",
+    "npm-run-all": "^4.1.5",
     "typescript": "~5.5.2"
   }
 }

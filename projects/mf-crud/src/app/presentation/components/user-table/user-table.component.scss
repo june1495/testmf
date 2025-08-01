@@ -1,0 +1,9 @@
+.actions-cell {
+  padding-right: 16px; // opcional para espacio
+}
+
+.actions {
+  display: inline-flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}

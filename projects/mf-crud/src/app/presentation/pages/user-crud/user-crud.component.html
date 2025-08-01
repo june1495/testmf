@@ -1,0 +1,11 @@
+  <mat-toolbar color="primary" class="mb-4 mat__container">
+  <span class="flex-1">Usuarios</span>
+  <button mat-flat-button color="dark"  (click)="createUser()">
+    <mat-icon aria-hidden="true">person_add</mat-icon>
+    Agregar usuario
+  </button>
+</mat-toolbar>
+<ng-container *ngIf="users$ | async as users">
+
+  <app-user-table [data]="users ?? []" (editUser)="onUserEdited($event)" (deleteUser)="onUserDeleted($event)"></app-user-table>
+</ng-container>
