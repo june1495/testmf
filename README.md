@@ -10,10 +10,16 @@ Este proyecto es un **Microfrontend** desarrollado en **Angular 18.2.0** e integ
 - **npm**: `>=9.x` (incluido con Node) o **Yarn** `>=1.22.x`  
 - **Angular CLI** (opcional, para ejecutar comandos `ng` globalmente):  
 
-## instalación 
+## 🔧 Instalación
 
-- Ejecutar npm install o yarn install
+> **Importante**: este proyecto es un **monorepo**. Es necesario instalar dependencias tanto a nivel raíz como en módulos específicos.
 
+1. Instalar dependencias en la carpeta raíz:
+   ```bash
+   npm install o yarn install
+2. Instalar dependencias compartidas en project/commons-lib:
+  cd project/commons-lib
+  npm install o yarn install
 ## 🚀 Comandos de desarrollo
 
 En este monorepo existen varios comandos para levantar el entorno de **Module Federation** con `mf-shell` como orquestador.
